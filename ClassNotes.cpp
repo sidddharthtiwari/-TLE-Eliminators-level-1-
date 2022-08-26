@@ -222,17 +222,17 @@ int main(){
 using namespace std;
 
 int main(){
-	// string a, b, c, d, e;
-	// cin >> a >> b >> c >> d >> e;
-    // cout << a << endl;
-	// cout << b << endl;
-	// cout << c << endl;
-	// cout << d << endl;
-	// cout << e << endl;
+	string a, b, c, d, e;
+	cin >> a >> b >> c >> d >> e;
+    cout << a << endl;
+	cout << b << endl;
+	cout << c << endl;
+	cout << d << endl;
+	cout << e << endl;
 	int a, b;
 	cin >> a;
 	cin >> b;
-	
+
 	cout << a*b;
 }
 
@@ -346,28 +346,6 @@ int main(){
 
 Q-1
 
-#include <iostream>
-using namespace std;
-
-int main(){
-	int x, y, z;
-	cin >> x >> y >> z;
-	
-	if ((x > y) && (y > z)){
-		cout << "x is the biggest no.";
-	}
-	else if ((y > x) && (y > z)){
-		cout << "y is the biggest no.";
-	}
-	else if((x >= y) && (y >=z)){
-		cout << "all three are equal";
-	}
-	else {
-		cout << "c is the biggest no.";
-	}
-}
-
-// Way 2 of above question **(Doubt)**
 
 #include <iostream>
 using namespace std;
@@ -424,19 +402,19 @@ int main(){
 // st2 = true;
 // 		// Now, In the next iteration it will check st2 again 
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main(){
-// 	int i = 0;
-// 	for (; i < 10;) ----/* statement 2 is the conditionof the loop it's checked after each iteration
-// 	                       statement 1 is generally for decalaring a variable, In statement 3 we 
-// 	                       generally set the steps */ 
-// 	{
-// 		cout << i << endl;
-// 		++i; 
-// 	}
-// }
+int main(){
+	int i = 0;
+	for (; i < 10;)     /* ---- statement 2 is the conditionof the loop it's checked after each iteration
+	                       statement 1 is generally for decalaring a variable, In statement 3 we 
+	                       generally set the steps */ 
+	{
+		cout << i << endl;
+		++i; 
+	}
+}
 
 // While loop
 
@@ -544,38 +522,38 @@ int main(){
 // glbal variable takes less precedence then inner scope
 // :: is a scope resolution operator
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int a = 5;
+int a = 5;
 
-// int main(){
-// 	cout << ::a << endl;
-// 	{
-// 		cout << ::a << endl;
-// 	}
+int main(){
+	cout << ::a << endl;
+	{
+		cout << ::a << endl;
+	}
 	
-// }
+}
 
 
 // go-to label_name statement
 
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main(){
-// 	for (int i = 10; i < 100; ++i){
-// 		for (int j = 4; j <=20; ++j){
-// 			cout << j << endl;
-// 			if (j % 6 == 0){
-// 				goto label_name;
+int main(){
+	for (int i = 10; i < 100; ++i){
+		for (int j = 4; j <=20; ++j){
+			cout << j << endl;
+			if (j % 6 == 0){
+				goto label_name;
 				
-// 		}
-// 			}
-// 	}
-// 	label_name:;
-// }
+		}
+			}
+	}
+	label_name:;
+}
 
 
 
@@ -583,69 +561,19 @@ int main(){
 
 // Q-1
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main(){
-// 	int a;
-// 	cin >> a;
-// 	int sum = 0;
+int main(){
+	int a;
+	cin >> a;
+	int sum = 0;
 	
-// 	for (int i = 1; i <= a; ++i){
-// 		sum += i;
-// 	}
-// 	cout << sum << endl;
-// }
-
-// Q-2
-
-// #include <iostream>
-// using namespace std;
-
-// int main(){
-// 	int a;
-// 	cin >> a;
-	
-// 	for (int i = 1; i <= a; ++i){
-// 		if (a % 3 == 0 && a % 5 == 0){
-// 			cout << "FizzBuzz"<< endl;
-// 		}
-// 		if (a % 3 == 0){
-// 			cout << "Fizz"<< endl;
-// 		}
-// 		if (a % 5 == 0){
-// 			cout << "Buzz"<< endl;
-// 		}
-// 	}
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	for (int i = 1; i <= a; ++i){
+		sum += i;
+	}
+	cout << sum << endl;
+}
 
 
 
